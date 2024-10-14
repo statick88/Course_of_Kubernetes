@@ -1,0 +1,40 @@
+# Inventario con FastAPI
+
+## Descripción del proyecto
+
+Este proyecto es un sistema de inventario que permite llevar un control de los productos que se tienen en una bodega. Se pueden agregar, modificar y eliminar productos, así como también se pueden ver los productos que se tienen en la bodega.
+
+## Tecnologías utilizadas
+
+- Python
+- FastAPI
+- SQLite
+
+## Instalación::: {.notes}
+
+Para iniciar este proyecto es necesario crear un entorno virtual, para ello se puede utilizar **env**    o **virtualenv**. Luego de tener el entorno virtual se debe instalar las dependencias del proyecto, para ello se puede ejecutar el siguiente comando:
+
+```bash
+python -m venv env
+source env/bin/activate
+```
+
+Ahora vamos a instalar  las dependencias del proyecto:
+
+```bash
+pip install fastapi uvicorn
+```
+:::
+
+## Ejecución::: {.notes}
+
+Para ejecutar el proyecto se debe ejecutar el siguiente comando: 
+
+```bash
+uvicorn main:app --reload
+```
+
+Luego de ejecutar el comando se debe abrir el navegador y acceder a la siguiente dirección: [http://localhost:8000/docs](http://localhost:8000/docs)
+
+:::
+

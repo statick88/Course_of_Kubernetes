@@ -1,0 +1,67 @@
+:::{.justify}
+# Introducción a Kubernetes.
+
+:::{.center}
+![Logo Kubernetes](../../logo.png){width=30%}
+:::
+
+Antes de empezar a conocer de Kubernetes, es importante tener en cuenta que Kubernetes es un sistema de código abierto para la automatización del despliegue, escalado y manejo de aplicaciones en contenedores. Fue originalmente diseñado por Google y ahora es mantenido por la Cloud Native Computing Foundation. Kubernetes es un proyecto de gran envergadura y es uno de los proyectos más activos en GitHub.
+
+Para entender lo que es Kubernetes, antes necesitamos conocer el concepto de Docker.
+
+## Docker
+:::{.center}
+![Docker](images/docker.png){width=30%}
+:::
+
+Docker es una plataforma de código abierto que permite automatizar el despliegue de aplicaciones dentro de contenedores de software. Estos contenedores son ligeros y portables, y son una forma de empaquetar aplicaciones y sus dependencias para que puedan ser ejecutadas en cualquier entorno.
+
+Imagen de Docker: Es un paquete que contiene una aplicación y todas sus dependencias, incluyendo el sistema operativo, librerías y herramientas.
+
+Contenedor de Docker: Es una instancia de una imagen de Docker que se ejecuta como un proceso aislado en el host. Los contenedores son portables y se pueden ejecutar en cualquier máquina que tenga Docker instalado.
+
+## Kubernetes
+
+Kubernetes es una plataforma de código abierto que automatiza las operaciones de contenedores, como el despliegue, escalado y manejo de aplicaciones en contenedores. Kubernetes fue diseñado para ser extensible y escalable, y es una plataforma ideal para desplegar aplicaciones en contenedores en entornos de producción.
+
+Kubernetes proporciona una API unificada para definir, desplegar y manejar aplicaciones en contenedores, y se encarga de la gestión de los recursos, la escalabilidad, la monitorización y la recuperación de fallos de las aplicaciones.
+
+Kubernetes
+
+- Permite desplegar aplicaciones en contenedores de forma sencilla y eficiente.
+
+- Proporciona una API unificada para definir, desplegar y manejar aplicaciones en contenedores.
+
+- Escala automáticamente las aplicaciones en función de la demanda de recursos.
+
+- Proporciona herramientas de monitorización y recuperación de fallos de las aplicaciones.
+
+- Es extensible y escalable, y es una plataforma ideal para desplegar aplicaciones en contenedores en entornos de producción.
+
+En resumen, Kubernetes es una plataforma de código abierto que automatiza las operaciones de contenedores, como el despliegue, escalado y manejo de aplicaciones en contenedores. Kubernetes proporciona una API unificada para definir, desplegar y manejar aplicaciones en contenedores, y se encarga de la gestión de los recursos, la escalabilidad, la monitorización y la recuperación de fallos de las aplicaciones.
+
+# Arquitectura de Kubernetes
+
+Kubernetes tiene una arquitectura modular y extensible que consta de varios componentes que trabajan juntos para proporcionar una plataforma de gestión de contenedores. Los componentes principales de Kubernetes son:
+
+- **Master Node**: Es el nodo principal de Kubernetes que se encarga de la gestión y el control de los clústeres de Kubernetes. El Master Node consta de varios componentes, incluyendo el API Server, el Scheduler, el Controller Manager y el etcd.
+
+
+- **Worker Node**: Es un nodo de trabajo de Kubernetes que ejecuta las aplicaciones en contenedores. El Worker Node consta de varios componentes, incluyendo el Kubelet, el Kube Proxy y el Container Runtime.
+
+- **etcd**: Es un almacén de datos distribuido que se utiliza para almacenar la configuración del clúster de Kubernetes.
+
+- **API Server**: Es el componente principal de Kubernetes que proporciona una API unificada para definir, desplegar y manejar aplicaciones en contenedores.
+
+- **Scheduler**: Es el componente de Kubernetes que se encarga de asignar las aplicaciones a los nodos de trabajo en función de la demanda de recursos.
+
+- **Controller Manager**: Es el componente de Kubernetes que se encarga de gestionar los controladores de recursos, como los controladores de replicación y los controladores de estado.
+
+- **Kubelet**: Es el componente de Kubernetes que se encarga de gestionar los contenedores en un nodo de trabajo.
+
+- **Kube Proxy**: Es el componente de Kubernetes que se encarga de gestionar el tráfico de red en un clúster de Kubernetes.
+
+- **Container Runtime**: Es el componente de Kubernetes que se encarga de ejecutar los contenedores en un nodo de trabajo.
+
+En resumen, Kubernetes tiene una arquitectura modular y extensible que consta de varios componentes que trabajan juntos para proporcionar una plataforma de gestión de contenedores. Los componentes principales de Kubernetes son el Master Node, el Worker Node, el etcd, el API Server, el Scheduler, el Controller Manager, el Kubelet, el Kube Proxy y el Container Runtime.
+:::
